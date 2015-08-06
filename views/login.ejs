@@ -1,0 +1,21 @@
+<% if (message) { %>
+<p><%= message %></p>
+<% } %>
+<form action="/login" method="post">
+	<div>
+	<label>Username:</label>
+	<input type="text" name="username"/><br/>
+	</div>
+	<div>
+	<label>Password:</label>
+	<input type="password" name="password"/>
+	</div>
+	<div>
+	<input type="submit" value="Submit"/>
+	</div>
+	<br>
+	<a class="btn btn-social-icon btn-github" href="/auth/github">
+    <i class="fa fa-github"></i>
+  </a>
+</form>
+<p><small>Hint - bob:secret</small></p>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <title>Passport-Local Example</title>
+                <link rel="stylesheet" href="/css/bootstrap.css" media="screen" charset="utf-8">
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        </head>
+        <body>
+                <% if (!user) { %>
+                        <p>
+                        <a href="/">Home</a> | 
+                        <a href="/login">Log In</a>
+                        </p>
+                <% } else { %>
+                        <p>
+                        <a href="/">Home</a> | 
+                        <a href="/account">Account</a> | 
+                        <a href="/logout">Log Out</a>
+                        </p>
+                <% } %>
+                <%- body %>
+                <script src="/js/jquery-min.js" charset="utf-8"></script>
+                <script src="/js/bootstrap.js" charset="utf-8"></script>
+        </body>
+</html>
